@@ -45,7 +45,7 @@ if (nodeArg[2]==="movie-this") {
 
 }
 else if (nodeArg[2]==="spotify-this-song") {
-	console.log("yay!");
+	// console.log("yay!");
 
 	var SpotifyWebApi = require('spotify-web-api-node');
 
@@ -59,7 +59,7 @@ else if (nodeArg[2]==="spotify-this-song") {
 
 
 	songTitle = songArr.join('+');
-	console.log(songTitle);
+	// console.log(songTitle);
 
 	var spotify = require('spotify');
  
@@ -69,14 +69,16 @@ else if (nodeArg[2]==="spotify-this-song") {
         	return;
     	}
  		
- 		console.log(data.tracks.items[0]);
+ 		console.log("***********"+"\nArtist(s): "+data.tracks.items[0].artists[0].name+"\n***********"+
+ 			"\nTitle: "+data.tracks.items[0].name+"\n***********"+"\nPreview Link: "+data.tracks.items[0].preview_url+"\n***********");
+ 		
     	// Do something with 'data' 
 	});
 
 
 }
 else if (nodeArg[2]==="my-tweets") {
-	console.log("yay!");
+	// console.log("yay!");
 
 	var Twitter = require('twitter');
 

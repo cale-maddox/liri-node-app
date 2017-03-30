@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/cale-maddox/liri-node-app#readme",
   "dependencies": {
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "spotify-web-api-node": "^2.3.6",
+    "twitter": "^1.7.0"
   }
 }
